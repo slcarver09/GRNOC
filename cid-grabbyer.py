@@ -3,12 +3,12 @@ import getpass
 import csv
 
 
-#create WSC connection
+#create WSC connection need to update URL/REALM
 client = wsc.WSC()
 client.username = input("Enter username: ")
 client.password = getpass.getpass('Enter password: ')
-client.url = "https://db.net.internet2.edu/cds2/circuit.cgi"
-client.realm = "https://idp.net.internet2.edu/idp/profile/SAML2/SOAP/ECP"
+client.url = ""
+client.realm = ""
 
 
 circuitNames = []
