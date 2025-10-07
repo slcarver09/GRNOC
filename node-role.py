@@ -7,8 +7,8 @@ from pprint import pprint
 client = wsc.WSC()
 client.username = input("Enter username: ")
 client.password = getpass.getpass('Enter password: ')
-client.url = "https://db.net.internet2.edu/cds2/node.cgi"
-client.realm = "https://idp.net.internet2.edu/idp/profile/SAML2/SOAP/ECP"
+client.url = <redacted>
+client.realm = <readacted>
 
 
 
