@@ -35,7 +35,7 @@ def main():
     with open(csv_path, newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
 
-        # Minimal header check
+        # Minimal header check. You would need to change this based on the KVP values you are updating
         for h in ("POP ID", "Ciena Site ID"):
             if h not in (reader.fieldnames or []):
                 raise ValueError(f"CSV must include column '{h}'. Found: {reader.fieldnames}")
